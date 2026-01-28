@@ -23,10 +23,10 @@ test.only("Test functionality to check the Multiple file upload", async ({
     .setInputFiles(["Uploads/file1.docx", "Uploads/Testfile1.pdf"]); //relative path from the Uploads folder
   await page.locator("button:has-text('Upload Multiple Files')").click();
   const uploadStatusLocator = await page
-                                    .locator("#multipleFileStatus")
-                                    .textContent();
-  
-    console.log("The files upload status message", uploadStatusLocator);
+    .locator("#multipleFileStatus")
+    .textContent();
+
+  console.log("The files upload status message", uploadStatusLocator);
 
   expect(uploadStatusLocator).toContain("file1.docx");
   expect(uploadStatusLocator).toContain("Testfile1.pdf");
