@@ -2,7 +2,7 @@ import { test, expect, Locator } from "@playwright/test";
 import { log } from "node:console";
 
 test("Scrolling inside dropdown", async ({ page }) => {
-  test.slow();
+  test.slow(); //Marks a test as "slow". Slow test will be given triple the default timeout
   await page.goto("https://www.booksbykilo.in/new-books?pricerange=201to500");
   await page.waitForLoadState("load");
   //scrolling infinite scrolling
@@ -21,7 +21,7 @@ test("Scrolling inside dropdown", async ({ page }) => {
     console.log(lastHeight);
 
     if (lastHeight === previousHeight) {
-          break;
+      break;
     }
     previousHeight = lastHeight;
   }
