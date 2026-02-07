@@ -13,7 +13,7 @@ test("Test functionality to check the single file upload", async ({ page }) => {
   await page.waitForTimeout(2000);
 });
 
-test.only("Test functionality to check the Multiple file upload", async ({
+test("Test functionality to check the Multiple file upload", async ({
   page,
 }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");

@@ -17,7 +17,7 @@ test("Test tocheck the hard and soft assertions", async ({ page }) => {
 
 
 
-test.only("Test to check the soft assertions", async ({ page }) => {
+test("Test to check the soft assertions", async ({ page }) => {
   await page.goto("https://demowebshop.tricentis.com");
 
   //Hard assertions

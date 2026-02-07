@@ -21,7 +21,7 @@ test("Right Click action", async ({ page }) => {
 });
 
 
-test.only("Double click action", async ({ page }) => {
+test("Double click action", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com");
   const doubleClickButton = page.locator("button[ondblclick='myFunction1()']");
   await doubleClickButton.dblclick();

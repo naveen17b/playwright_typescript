@@ -1,6 +1,6 @@
 import { test, expect } from  "@playwright/test";
 
-test.only("", async ({ page }) => {
+test("", async ({ page }) => {
     await page.goto("https://blazedemo.com/");
 
 
